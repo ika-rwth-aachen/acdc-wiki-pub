@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {background-color: black;}
+pre {
+	font-weight: normal;
+	color: #bbb;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+b {font-weight: normal}
+b.BOLD {color: #fff}
+b.ITA {font-style: italic}
+b.UND {text-decoration: underline}
+b.STR {text-decoration: line-through}
+b.UNDSTR {text-decoration: underline line-through}
+b.BLK {color: #000000}
+b.RED {color: #aa0000}
+b.GRN {color: #00aa00}
+b.YEL {color: #aa5500}
+b.BLU {color: #0000aa}
+b.MAG {color: #aa00aa}
+b.CYN {color: #00aaaa}
+b.WHI {color: #aaaaaa}
+b.HIK {color: #555555}
+b.HIR {color: #ff5555}
+b.HIG {color: #55ff55}
+b.HIY {color: #ffff55}
+b.HIB {color: #5555ff}
+b.HIM {color: #ff55ff}
+b.HIC {color: #55ffff}
+b.HIW {color: #ffffff}
+b.BBLK {background-color: #000000}
+b.BRED {background-color: #aa0000}
+b.BGRN {background-color: #00aa00}
+b.BYEL {background-color: #aa5500}
+b.BBLU {background-color: #0000aa}
+b.BMAG {background-color: #aa00aa}
+b.BCYN {background-color: #00aaaa}
+b.BWHI {background-color: #aaaaaa}
+</style>
+</head>
+<body>
+<pre>Script started on 2019-09-10 13:31:41+0200
+Base path: /home/simon/git/sdl1-ros/catkin_workspace
+Source space: /home/simon/git/sdl1-ros/catkin_workspace/src
+Build space: /home/simon/git/sdl1-ros/catkin_workspace/build
+Devel space: /home/simon/git/sdl1-ros/catkin_workspace/devel
+Install space: /home/simon/git/sdl1-ros/catkin_workspace/install
+<b class=BLU>####</b>
+<b class=BLU>#### Running command: </b><b class=HIB>"cmake /home/simon/git/sdl1-ros/catkin_workspace/src -DCATKIN_DEVEL_PREFIX=/home/simon/git/sdl1-ros/catkin_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/simon/git/sdl1-ros/catkin_workspace/install -G Unix Makefiles"</b><b class=BLU> in </b><b class=HIB>"/home/simon/git/sdl1-ros/catkin_workspace/build"</b>
+<b class=BLU>####</b>
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/simon/git/sdl1-ros/catkin_workspace/devel
+-- Using CMAKE_PREFIX_PATH: /home/simon/git/sdl1-ros/catkin_workspace/devel;/opt/ros/melodic
+-- This workspace overlays: /home/simon/git/sdl1-ros/catkin_workspace/devel;/opt/ros/melodic
+-- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.15", minimum required is "2") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python2
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/simon/git/sdl1-ros/catkin_workspace/build/test_results
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python2 (found version "2.7.15") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Using Python nosetests: /usr/bin/nosetests-2.7
+-- catkin 0.7.17
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- <b class=MAG>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b>
+-- <b class=MAG>~~ </b> traversing 7 packages in topological order:
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland </b>(metapackage)
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland_msgs</b>
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland_server</b>
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland_plugins</b>
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland_ika_plugins</b>
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>flatland_viz</b>
+-- <b class=MAG>~~ </b> - <b class="BOLD"></b><b class=HIB>racing</b>
+-- <b class=MAG>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</b>
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin metapackage: 'flatland'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(flatland/flatland)
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>flatland_msgs</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(flatland/flatland_msgs)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- flatland_msgs: 4 messages, 3 services
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>flatland_server</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(flatland/flatland_server)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Checking for module 'yaml-cpp'
+--   Found yaml-cpp, version 0.5.2
+-- Found Lua: /usr/lib/x86_64-linux-gnu/liblua5.3.so;/usr/lib/x86_64-linux-gnu/libm.so (found suitable version "5.3.3", minimum required is "5.1") 
+-- Found OpenCV: /usr (found version "3.2.0") 
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   date_time
+--   system
+--   thread
+--   chrono
+--   atomic
+-- Using COVERAGE: OFF
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>flatland_plugins</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(flatland/flatland_plugins)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Using COVERAGE: OFF
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>flatland_ika_plugins</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(racing/flatland_plugins_ika)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>flatland_viz</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(flatland/flatland_viz)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Using COVERAGE: OFF
+-- Checking for modules 'OGRE;OGRE-Overlay'
+--   Found OGRE, version 1.9.0
+--   Found OGRE-Overlay, version 1.9.0
+-- Using Qt5 based on the rviz_QT_VERSION: 5.9.5
+-- <b class="BOLD"></b><b class=HIG>+++</b> processing catkin package: '<b class="BOLD"></b><b class=HIB>racing</b>'
+-- <b class="BOLD"></b><b class=HIB>==&gt;</b> add_subdirectory(racing/racing)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/simon/git/sdl1-ros/catkin_workspace/build
+<b class=BLU>####</b>
+<b class=BLU>#### Running command: </b><b class=HIB>"make -j4 -l4"</b><b class=BLU> in </b><b class=HIB>"/home/simon/git/sdl1-ros/catkin_workspace/build"</b>
+<b class=BLU>####</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_SpawnModel</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_Collision</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_DebugTopicList</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target std_msgs_generate_messages_lisp</b>
+[  0%] Built target std_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_MoveModel</b>
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_SpawnModel
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_Collisions</b>
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_Collision
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_DebugTopicList
+<b class=MAG></b><b class=HIM>Scanning dependencies of target geometry_msgs_generate_messages_lisp</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_Vector2</b>
+[  0%] Built target geometry_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _flatland_msgs_generate_messages_check_deps_DeleteModel</b>
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_MoveModel
+<b class=MAG></b><b class=HIM>Scanning dependencies of target std_msgs_generate_messages_eus</b>
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_Collisions
+[  0%] Built target std_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target geometry_msgs_generate_messages_eus</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target geometry_msgs_generate_messages_cpp</b>
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_Vector2
+[  0%] Built target geometry_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target std_msgs_generate_messages_cpp</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target std_msgs_generate_messages_nodejs</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target geometry_msgs_generate_messages_nodejs</b>
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _flatland_msgs_generate_messages_check_deps_DeleteModel
+<b class=MAG></b><b class=HIM>Scanning dependencies of target std_msgs_generate_messages_py</b>
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target geometry_msgs_generate_messages_py</b>
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_Box2D</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target visualization_msgs_generate_messages_nodejs</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target _catkin_empty_exported_target</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target sensor_msgs_generate_messages_cpp</b>
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target _catkin_empty_exported_target
+[  0%] Built target sensor_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target visualization_msgs_generate_messages_lisp</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_generate_messages_nodejs</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf_generate_messages_cpp</b>
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_generate_messages_lisp</b>
+[  0%] Built target actionlib_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_generate_messages_eus</b>
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2DistanceJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_msgs_generate_messages_py</b>
+[  1%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2FrictionJoint.cpp.o</b>
+[  1%] Built target actionlib_generate_messages_eus
+[  1%] Built target actionlib_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_msgs_generate_messages_lisp</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target roscpp_generate_messages_nodejs</b>
+[  1%] Built target actionlib_msgs_generate_messages_lisp
+[  1%] Built target roscpp_generate_messages_nodejs
+[  1%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2GearJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target rosgraph_msgs_generate_messages_cpp</b>
+[  1%] Built target rosgraph_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target roscpp_generate_messages_cpp</b>
+[  1%] Built target roscpp_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_generate_messages_cpp</b>
+[  1%] Built target actionlib_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target sensor_msgs_generate_messages_nodejs</b>
+[  1%] Built target sensor_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target visualization_msgs_generate_messages_py</b>
+[  1%] Built target visualization_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target rosgraph_msgs_generate_messages_eus</b>
+[  1%] Built target rosgraph_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf_generate_messages_eus</b>
+[  1%] Built target tf_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_msgs_generate_messages_cpp</b>
+[  1%] Built target actionlib_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf_generate_messages_lisp</b>
+[  1%] Built target tf_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target roscpp_generate_messages_lisp</b>
+[  1%] Built target roscpp_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target visualization_msgs_generate_messages_cpp</b>
+[  1%] Built target visualization_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf2_msgs_generate_messages_eus</b>
+[  1%] Built target tf2_msgs_generate_messages_eus
+[  2%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2Joint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf_generate_messages_nodejs</b>
+[  2%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2MotorJoint.cpp.o</b>
+[  2%] Built target tf_generate_messages_nodejs
+[  4%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2MouseJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf2_msgs_generate_messages_nodejs</b>
+[  4%] Built target tf2_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf_generate_messages_py</b>
+[  4%] Built target tf_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target sensor_msgs_generate_messages_py</b>
+[  4%] Built target sensor_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_msgs_generate_messages_nodejs</b>
+[  4%] Built target actionlib_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target rosgraph_msgs_generate_messages_nodejs</b>
+[  4%] Built target rosgraph_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf2_msgs_generate_messages_cpp</b>
+[  4%] Built target tf2_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf2_msgs_generate_messages_lisp</b>
+[  4%] Built target tf2_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target sensor_msgs_generate_messages_eus</b>
+[  4%] Built target sensor_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target rosgraph_msgs_generate_messages_lisp</b>
+[  4%] Built target rosgraph_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_msgs_generate_messages_eus</b>
+[  4%] Built target actionlib_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target roscpp_generate_messages_eus</b>
+[  4%] Built target roscpp_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target rosgraph_msgs_generate_messages_py</b>
+[  4%] Built target rosgraph_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target sensor_msgs_generate_messages_lisp</b>
+[  4%] Built target sensor_msgs_generate_messages_lisp
+[  4%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2PrismaticJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target roscpp_generate_messages_py</b>
+[  4%] Built target roscpp_generate_messages_py
+[  5%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2PulleyJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target actionlib_generate_messages_py</b>
+[  5%] Built target actionlib_generate_messages_py
+[  5%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2RevoluteJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target tf2_msgs_generate_messages_py</b>
+[  5%] Built target tf2_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target visualization_msgs_generate_messages_eus</b>
+[  5%] Built target visualization_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target map_msgs_generate_messages_eus</b>
+[  5%] Built target map_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target nav_msgs_generate_messages_cpp</b>
+[  5%] Built target nav_msgs_generate_messages_cpp
+[  6%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2RopeJoint.cpp.o</b>
+[  8%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2WeldJoint.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target map_msgs_generate_messages_py</b>
+[  8%] Built target map_msgs_generate_messages_py
+<b class=MAG></b><b class=HIM>Scanning dependencies of target nav_msgs_generate_messages_lisp</b>
+[  8%] Built target nav_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target map_msgs_generate_messages_cpp</b>
+[  8%] Built target map_msgs_generate_messages_cpp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target nav_msgs_generate_messages_eus</b>
+[  8%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Joints/b2WheelJoint.cpp.o</b>
+[  8%] Built target nav_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target map_msgs_generate_messages_nodejs</b>
+[  8%] Built target map_msgs_generate_messages_nodejs
+[  9%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2CircleContact.cpp.o</b>
+[  9%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2Contact.cpp.o</b>
+[ 10%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2ContactSolver.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target map_msgs_generate_messages_lisp</b>
+[ 10%] Built target map_msgs_generate_messages_lisp
+[ 10%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2PolygonAndCircleContact.cpp.o</b>
+[ 12%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2EdgeAndCircleContact.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target nav_msgs_generate_messages_nodejs</b>
+[ 12%] Built target nav_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target nav_msgs_generate_messages_py</b>
+[ 12%] Built target nav_msgs_generate_messages_py
+[ 12%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target racing_library</b>
+[ 13%] <b class=GRN>Building CXX object racing/racing/CMakeFiles/racing_library.dir/src/RacingController.cpp.o</b>
+[ 14%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2ChainAndCircleContact.cpp.o</b>
+[ 14%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2ChainAndPolygonContact.cpp.o</b>
+[ 14%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libracing_library.so</b>
+[ 16%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/Contacts/b2PolygonContact.cpp.o</b>
+[ 16%] Built target racing_library
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages_lisp</b>
+[ 16%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/Vector2.msg</b>
+[ 17%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/DebugTopicList.msg</b>
+[ 17%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/Collisions.msg</b>
+[ 18%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/Collision.msg</b>
+[ 18%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2Body.cpp.o</b>
+[ 18%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/DeleteModel.srv</b>
+[ 20%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2ContactManager.cpp.o</b>
+[ 20%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2Fixture.cpp.o</b>
+[ 21%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/SpawnModel.srv</b>
+[ 21%] <b class=BLU></b><b class=HIB>Generating Lisp code from flatland_msgs/MoveModel.srv</b>
+[ 21%] Built target flatland_msgs_generate_messages_lisp
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages_eus</b>
+[ 21%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/Vector2.msg</b>
+[ 22%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/DebugTopicList.msg</b>
+[ 24%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2Island.cpp.o</b>
+[ 24%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/Collisions.msg</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages_cpp</b>
+[ 24%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/Vector2.msg</b>
+[ 25%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/Collision.msg</b>
+[ 25%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2World.cpp.o</b>
+[ 25%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/DeleteModel.srv</b>
+[ 27%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/SpawnModel.srv</b>
+[ 28%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/DebugTopicList.msg</b>
+[ 28%] <b class=BLU></b><b class=HIB>Generating EusLisp code from flatland_msgs/MoveModel.srv</b>
+[ 29%] <b class=BLU></b><b class=HIB>Generating EusLisp manifest code for flatland_msgs</b>
+[ 31%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/Collisions.msg</b>
+[ 32%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Dynamics/b2WorldCallbacks.cpp.o</b>
+[ 32%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/Collision.msg</b>
+[ 32%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2BlockAllocator.cpp.o</b>
+[ 33%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/DeleteModel.srv</b>
+[ 35%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2Draw.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages_nodejs</b>
+[ 36%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/Vector2.msg</b>
+[ 36%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2Math.cpp.o</b>
+[ 37%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/DebugTopicList.msg</b>
+[ 37%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/Collisions.msg</b>
+[ 39%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/Collision.msg</b>
+[ 40%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2Settings.cpp.o</b>
+[ 40%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/DeleteModel.srv</b>
+[ 40%] Built target flatland_msgs_generate_messages_eus
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages_py</b>
+[ 41%] <b class=BLU></b><b class=HIB>Generating Python from MSG flatland_msgs/Vector2</b>
+[ 43%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2StackAllocator.cpp.o</b>
+[ 44%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/SpawnModel.srv</b>
+[ 44%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/SpawnModel.srv</b>
+[ 44%] <b class=BLU></b><b class=HIB>Generating Javascript code from flatland_msgs/MoveModel.srv</b>
+[ 44%] <b class=BLU></b><b class=HIB>Generating Python from MSG flatland_msgs/DebugTopicList</b>
+[ 44%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Common/b2Timer.cpp.o</b>
+[ 44%] Built target flatland_msgs_generate_messages_nodejs
+<b class=MAG></b><b class=HIM>Scanning dependencies of target racing_controller_node</b>
+[ 45%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/Shapes/b2CircleShape.cpp.o</b>
+[ 47%] <b class=GRN>Building CXX object racing/racing/CMakeFiles/racing_controller_node.dir/tools/racing_controller_node.cpp.o</b>
+[ 47%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/Shapes/b2EdgeShape.cpp.o</b>
+[ 48%] <b class=BLU></b><b class=HIB>Generating Python from MSG flatland_msgs/Collisions</b>
+[ 48%] <b class=BLU></b><b class=HIB>Generating Python from MSG flatland_msgs/Collision</b>
+[ 50%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/Shapes/b2ChainShape.cpp.o</b>
+[ 51%] <b class=BLU></b><b class=HIB>Generating C++ code from flatland_msgs/MoveModel.srv</b>
+[ 52%] <b class=BLU></b><b class=HIB>Generating Python code from SRV flatland_msgs/DeleteModel</b>
+[ 52%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/Shapes/b2PolygonShape.cpp.o</b>
+[ 52%] <b class=BLU></b><b class=HIB>Generating Python code from SRV flatland_msgs/SpawnModel</b>
+[ 52%] Built target flatland_msgs_generate_messages_cpp
+[ 54%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2BroadPhase.cpp.o</b>
+[ 55%] <b class=BLU></b><b class=HIB>Generating Python code from SRV flatland_msgs/MoveModel</b>
+[ 55%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2CollideCircle.cpp.o</b>
+[ 55%] <b class=BLU></b><b class=HIB>Generating Python msg __init__.py for flatland_msgs</b>
+[ 56%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2CollideEdge.cpp.o</b>
+[ 56%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2CollidePolygon.cpp.o</b>
+[ 58%] <b class=BLU></b><b class=HIB>Generating Python srv __init__.py for flatland_msgs</b>
+[ 59%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2Collision.cpp.o</b>
+[ 59%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2Distance.cpp.o</b>
+[ 59%] Built target flatland_msgs_generate_messages_py
+[ 60%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2DynamicTree.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_msgs_generate_messages</b>
+[ 60%] Built target flatland_msgs_generate_messages
+[ 60%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Collision/b2TimeOfImpact.cpp.o</b>
+[ 62%] <b class=GRN>Building CXX object flatland/flatland_server/thirdparty/Box2D/CMakeFiles/flatland_Box2D.dir/Rope/b2Rope.cpp.o</b>
+[ 62%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libflatland_Box2D.so</b>
+[ 62%] Built target flatland_Box2D
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_lib</b>
+[ 62%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/world.cpp.o</b>
+[ 63%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/simulation_manager.cpp.o</b>
+[ 64%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/layer.cpp.o</b>
+[ 64%] <b class=GRN></b><b class=HIG>Linking CXX executable /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/racing/racing_controller_node</b>
+[ 64%] Built target racing_controller_node
+[ 66%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/model.cpp.o</b>
+[ 66%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/entity.cpp.o</b>
+[ 67%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/debug_visualization.cpp.o</b>
+[ 67%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/geometry.cpp.o</b>
+[ 68%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/body.cpp.o</b>
+[ 68%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/joint.cpp.o</b>
+[ 70%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/model_body.cpp.o</b>
+[ 70%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/collision_filter_registry.cpp.o</b>
+[ 71%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/plugin_manager.cpp.o</b>
+[ 71%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/interactive_marker_manager.cpp.o</b>
+[ 71%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/world_plugin.cpp.o</b>
+[ 72%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/timekeeper.cpp.o</b>
+[ 74%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/model_plugin.cpp.o</b>
+[ 74%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/service_manager.cpp.o</b>
+[ 75%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/yaml_reader.cpp.o</b>
+[ 75%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/dummy_model_plugin.cpp.o</b>
+[ 75%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/yaml_preprocessor.cpp.o</b>
+[ 77%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_lib.dir/src/dummy_world_plugin.cpp.o</b>
+[ 78%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libflatland_lib.so</b>
+[ 78%] Built target flatland_lib
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_server</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_plugins_lib</b>
+[ 79%] <b class=GRN>Building CXX object flatland/flatland_server/CMakeFiles/flatland_server.dir/src/flatland_server_node.cpp.o</b>
+[ 79%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/laser.cpp.o</b>
+[ 79%] <b class=GRN></b><b class=HIG>Linking CXX executable /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/flatland_server/flatland_server</b>
+[ 79%] Built target flatland_server
+[ 81%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/tricycle_drive.cpp.o</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_viz_autogen</b>
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_viz_plugins_autogen</b>
+[ 82%] <b class=BLU></b><b class=HIB>Automatic MOC for target flatland_viz</b>
+[ 82%] <b class=BLU></b><b class=HIB>Automatic MOC for target flatland_viz_plugins</b>
+[ 82%] Built target flatland_viz_plugins_autogen
+[ 82%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/diff_drive.cpp.o</b>
+[ 83%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/model_tf_publisher.cpp.o</b>
+[ 83%] Built target flatland_viz_autogen
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_viz_plugins</b>
+[ 83%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz_plugins.dir/flatland_viz_plugins_autogen/mocs_compilation.cpp.o</b>
+[ 83%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/update_timer.cpp.o</b>
+[ 85%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/bumper.cpp.o</b>
+[ 86%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/tween.cpp.o</b>
+[ 86%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/bool_sensor.cpp.o</b>
+[ 87%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz_plugins.dir/src/load_model_dialog.cpp.o</b>
+[ 89%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/world_modifier.cpp.o</b>
+[ 89%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/world_random_wall.cpp.o</b>
+[ 89%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz_plugins.dir/src/spawn_model_tool.cpp.o</b>
+[ 90%] <b class=GRN>Building CXX object flatland/flatland_plugins/CMakeFiles/flatland_plugins_lib.dir/src/gps.cpp.o</b>
+[ 91%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz_plugins.dir/src/pause_sim_tool.cpp.o</b>
+[ 91%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libflatland_plugins_lib.so</b>
+[ 93%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libflatland_viz_plugins.so</b>
+[ 93%] Built target flatland_plugins_lib
+[ 93%] Built target flatland_viz_plugins
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_viz</b>
+[ 94%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/flatland_viz_autogen/mocs_compilation.cpp.o</b>
+[ 95%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/flatland_viz.cpp.o</b>
+[ 95%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/flatland_viz_node.cpp.o</b>
+[ 95%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/flatland_window.cpp.o</b>
+[ 95%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/spawn_model_tool.cpp.o</b>
+[ 97%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/pause_sim_tool.cpp.o</b>
+[ 98%] <b class=GRN>Building CXX object flatland/flatland_viz/CMakeFiles/flatland_viz.dir/src/load_model_dialog.cpp.o</b>
+[ 98%] <b class=GRN></b><b class=HIG>Linking CXX executable /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/flatland_viz/flatland_viz</b>
+[ 98%] Built target flatland_viz
+<b class=MAG></b><b class=HIM>Scanning dependencies of target flatland_ika_plugins_lib</b>
+[100%] <b class=GRN>Building CXX object racing/flatland_plugins_ika/CMakeFiles/flatland_ika_plugins_lib.dir/src/one_track_drive.cpp.o</b>
+[100%] <b class=GRN></b><b class=HIG>Linking CXX shared library /home/simon/git/sdl1-ros/catkin_workspace/devel/lib/libflatland_ika_plugins_lib.so</b>
+[100%] Built target flatland_ika_plugins_lib
+
+Script done on 2019-09-10 13:34:48+0200
+</pre>
+</body>
+</html>
